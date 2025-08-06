@@ -17,7 +17,7 @@ llm = OllamaModel(
         )
 agent = Agent(model=llm)
 
-res = agent("Hello!")
+res = agent("How many planets are there in our solar system?")
 
 print("------------ agent result print ----")
 print(res.stop_reason)
