@@ -17,4 +17,10 @@ llm = OllamaModel(
         )
 agent = Agent(model=llm)
 
-agent("Hello!")
+res = agent("Hello!")
+
+print("------------ agent result print ----")
+print(res.stop_reason)
+print(res.metrics)
+print(res.state)
+print(res.message)
